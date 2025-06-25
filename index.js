@@ -3,7 +3,11 @@ const { joinVoiceChannel } = require("@discordjs/voice");
 
 const client = new Client({ checkUpdate: false });
 
-const config = require(`${process.cwd()}/config.json`);
+const config = {
+    "Token": "tokenhere",
+    "Guild": "",
+    "Channel": ""
+}
 
 client.on('ready', async () => {
     console.log(`Logged in as ${client.user.tag}!`);
